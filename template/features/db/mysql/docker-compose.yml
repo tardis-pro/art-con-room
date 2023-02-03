@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_DATABASE: '${DB_DATABASE}'
+    container_name: mysql
+    restart: always
+    hostname: mysql
+    ports:
+      - '${DB_PORT}:5432'
+    networks:
+      - local
+    volumes:
+      - local:/var/lib/mysql
+  adminer:
+    image: adminer:latest
+    environment:
+      ADMINER_DEFAULT_SERVER: mysql
+    container_name: adminer
+    restart: always
+    hostname: adminer
+    ports:
+      - '${DB_ADMINER_PORT}:8080'
+    networks:
+      - local
+networks:
+  local:
+    driver: 'bridge'
+volumes:
+  local:
+    driver: 'local'

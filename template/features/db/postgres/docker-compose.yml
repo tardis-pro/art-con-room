@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  postgres:
+    image: kartoza/postgis:latest
+    environment:
+      POSTGRES_DBNAME: '${DB_DATABASE}'
+      POSTGRES_USER: '${DB_USERNAME}'
+      POSTGRES_PASS: '${DB_PASSWORD}'
+      POSTGRES_MULTIPLE_EXTENSIONS: postgis,hstore,postgis_topology
+    container_name: postgres
+    restart: always
+    hostname: postgres
+    ports:
+      - '${DB_PORT}:5432'
+    networks:
+      - local
+    volumes:
+      - local:/var/lib/postgresql/
+networks:
+  local:
+    driver: 'bridge'
+volumes:
+  local:
+    driver: 'local'

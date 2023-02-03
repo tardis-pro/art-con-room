@@ -1,0 +1,63 @@
+{
+  "name": "art-con-room",
+  "version": "0.0.1",
+  "description": "An KISS API cookie-cutter",
+  "author": {
+    "email": "pronit@tardis.digital",
+    "name": "Tardis companions"
+  },
+  "contributors": [
+    {
+      "name": "Pronit Das",
+      "email": "pronit78@gmail.com",
+      "url": "https://github.com/pronitdas"
+    }
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "license": "MIT",
+  "bin": "cli.js",
+  "private": false,
+  "files": [
+    "cli.js",
+    "prompts.js",
+    "saofile.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava",
+    "test:snapshot": "ava --update-snapshots",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lintfix": "npm run lint:eslint:fix && npm run lint:prettier:fix",
+    "lint:eslint": "eslint --ext .js,.ts",
+    "lint:eslint:fix": "eslint --fix --ext .js,.ts",
+    "lint:prettier": "prettier --check \"{,!(node_modules|template)/**/}*.{js,ts}\"",
+    "lint:prettier:fix": "prettier --write \"{,!(node_modules|template)/**/}*.{js,ts}\"",
+    "release": "shipjs prepare",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "cac": "^6.7.3",
+    "chalk": "^5.2.0",
+    "lodash": "^4.17.21",
+    "sao": "^1.7.1",
+    "validate-npm-package-name": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/register": "^7.18.9",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "ava": "^5.1.1",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.3.0",
+    "shipjs": "^0.25.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
