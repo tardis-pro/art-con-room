@@ -1,0 +1,22 @@
+API_URL=
+<%_ if (server === 'koa') { _%>
+HOST=127.0.0.1
+PORT=3000
+<%_ } _%>
+<%_ if (db !== 'none') { _%>
+DB_PORT=
+DB_DATABASE=
+DB_PASSWORD=
+DB_HOST=
+<%_ } _%>
+<%_ if (db !== 'none' && db === 'postgres') { _%>
+DB_USERNAME=
+DB_DIALECT=postgres
+DB_PORT=5432
+<%_ } _%>
+<%_ if (db !== 'none' && db === 'mysql') { _%>
+DB_ADMINER_PORT=
+DB_USERNAME=
+DB_DIALECT=mysql
+DB_PORT=3306
+<%_ } _%>
