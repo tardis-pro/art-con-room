@@ -55,7 +55,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "prettier": "^2.3.0",
-    "shipjs": "^0.25.1"
+    "shipjs": "^0.26.0"
   },
   "engines": {
     "node": ">=18"
