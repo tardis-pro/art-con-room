@@ -48,7 +48,7 @@
     "@babel/core": "^7.21.4",
     "@babel/register": "^7.21.0",
     "@commitlint/cli": "^17.6.1",
-    "@commitlint/config-conventional": "^17.4.2",
+    "@commitlint/config-conventional": "^17.6.1",
     "ava": "^5.2.0",
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.3.0",
