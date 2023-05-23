@@ -1,10 +1,10 @@
 module.exports = {
-  extends: ['plugin:prettier/recommended'],
+  extends: ["plugin:prettier/recommended"],
   globals: {
     use: true,
     browser: true,
   },
   rules: {
-    'no-console': 'off',
+    "no-console": "off",
   },
 };

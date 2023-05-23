@@ -11,19 +11,19 @@
 - [Ava](https://ava.li) for testing 🧪
 - [TypeScript](https://typescript.nuxtjs.org/) baked in 🙌
 - Backend Framework of your choice
-  - [Express](121) (✅)
-  - [Koa](1232) (✅)
-  - [Hapi](1241) (✅)
-  - [Fastify](1219) (✅)
-- [ORM Support](2318)
-  - [TypeORM](1249) (✅)
-  - [Sequelize](1219) (✅)
+  - [Express](http://expressjs.com/) (✅)
+  - [Koa](https://koajs.com/) (✅)
+  - [Hapi](https://hapi.dev/) (✅)
+  - [Fastify](https://www.fastify.io/) (✅)
+- [ORM Support]()
+  - [TypeORM](https://typeorm.io/) (✅)
+  - [Sequelize](https://sequelize.org/) (✅)
 - Deploy your apps 🏗
-  - [Docker 🐳](1214) (✅)
-  - [DIY 🤓](1214) (✅)
+  - [Docker 🐳](https://www.docker.com/) (✅)
+  - [DIY 🤓]() (✅)
 - DB of your own choice ⌗
-  - [Postgres 🐘](1216) (✅)
-  - [MySQL 🐬](1216) (✅)
+  - [Postgres 🐘](https://www.postgresql.org/) (✅)
+  - [MySQL 🐬](https://www.mysql.com/) (✅)
 
 ## Usage
 > _Generate a [Personal Access Token](https://github.com/settings/tokens/new) with `read:packages` scope_

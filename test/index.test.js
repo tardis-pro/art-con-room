@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-const path = require('path');
-const sao = require('sao');
-const saoConfig = require('../saofile.js');
-const test = require('ava');
+const path = require("path");
+const sao = require("sao");
+const saoConfig = require("../saofile.js");
+const test = require("ava");
 
-const generator = path.join(__dirname, '..');
+const generator = path.join(__dirname, "..");
 
 const getPkgFields = (pkg) => {
   pkg = JSON.parse(pkg);
@@ -17,16 +17,16 @@ const getPkgFields = (pkg) => {
 
 const verifyFileList = async (t, answers = {}) => {
   const stream = await sao.mock({ generator }, answers);
-  t.snapshot(stream.fileList, 'Generated files');
+  t.snapshot(stream.fileList, "Generated files");
 };
 
 const verifyPkg = async (t, answers = {}) => {
   const stream = await sao.mock({ generator }, answers);
-  const pkg = await stream.readFile('package.json');
-  t.snapshot(getPkgFields(pkg), 'package.json');
+  const pkg = await stream.readFile("package.json");
+  t.snapshot(getPkgFields(pkg), "package.json");
 };
 
-test('verify default answers', async (t) => {
+test("verify default answers", async (t) => {
   await verifyFileList(t);
   await verifyPkg(t);
 });
@@ -37,7 +37,7 @@ for (const prompt of saoConfig.prompts) {
       test(`verify ${prompt.name}: ${choice.name}`, async (t) => {
         const answer = {
           [prompt.name]:
-            prompt.type === 'checkbox' ? [choice.value] : choice.value,
+            prompt.type === "checkbox" ? [choice.value] : choice.value,
         };
         await verifyFileList(t, answer);
         await verifyPkg(t, answer);
