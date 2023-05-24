@@ -2,7 +2,7 @@ module.exports = {
   extends: ["plugin:prettier/recommended"],
   globals: {
     use: true,
-    browser: true,
+    browser: false,
   },
   rules: {
     "no-console": "off",

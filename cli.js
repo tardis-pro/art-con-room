@@ -6,7 +6,6 @@ const chalk = require("chalk");
 const { version } = require("./package.json");
 
 const generator = path.resolve(__dirname, "./");
-
 const cli = cac("art-con-room");
 
 cli

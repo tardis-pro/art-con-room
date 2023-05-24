@@ -1,7 +1,7 @@
 {
   "name": "art-con-room",
-  "version": "0.0.1",
-  "description": "An KISS API cookie-cutter",
+  "version": "0.0.9",
+  "description": "An Node API cookie-cutter",
   "author": {
     "email": "pronit@tardis.digital",
     "name": "Tardis companions"
@@ -13,9 +13,6 @@
       "url": "https://github.com/pronitdas"
     }
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "license": "MIT",
   "bin": "cli.js",
   "private": false,
@@ -39,7 +36,7 @@
   },
   "dependencies": {
     "cac": "^6.7.3",
-    "chalk": "^5.2.0",
+    "chalk": "^4.1.2",
     "lodash": "^4.17.21",
     "sao": "^1.7.1",
     "validate-npm-package-name": "^5.0.0"
@@ -59,5 +56,37 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "keywords": [
+    "ava",
+    "boilerplate",
+    "codecov",
+    "es6",
+    "es7",
+    "flavored",
+    "generator",
+    "gfm",
+    "github",
+    "lad",
+    "license",
+    "license-generator",
+    "markdown",
+    "module",
+    "np",
+    "npm",
+    "nyc",
+    "package",
+    "prettier",
+    "project",
+    "remark",
+    "sao",
+    "scaffold",
+    "spdx",
+    "starter",
+    "xo",
+    "yeoman",
+    "art",
+    "con",
+    "room"
+  ]
 }

@@ -26,11 +26,8 @@
   - [MySQL 🐬](https://www.mysql.com/) (✅)
 
 ## Usage
-> _Generate a [Personal Access Token](https://github.com/settings/tokens/new) with `read:packages` scope_
-
 ``` bash
 
-# install dependencies, this step will only work if you're logged in
 $ npx art-con-room backend-service
 
 # serve with hot reload at localhost:3000
