@@ -1,10 +1,14 @@
-# Art-Con-Room
+# Art-Con-Room (Artificial Configuration Room) [![ci](https://github.com/tardis-pro/art-con-room/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/tardis-pro/art-con-room/actions/workflows/ci.yml)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Generate a new Node.js based API project 
+> Give all kinds of reasonable defaults mixed with some opinionated choices.
+> This project is inspired by [Nuxt.js](https://nuxtjs.org/) and [Laravel](https://laravel.com/)
+> This project is still in its early stages, so please feel free to contribute.
+
 
 ## Features
 
@@ -25,10 +29,21 @@
   - [Postgres 🐘](https://www.postgresql.org/) (✅)
   - [MySQL 🐬](https://www.mysql.com/) (✅)
 
+## In the Kitchen rn 🍳
+  - Authentication / Authorization, Tenant based auth, SAML, OAuth2, JWT support
+  - GraphQL support
+  - CI/CD Recipes
+  - Documentation Templates
+  - Analytics and Distributed compute support.
+  - GIS processing support (vector, raster, lidar)
+  - on and on and on...
 ## Usage
 ``` bash
 
 $ npx art-con-room backend-service
+
+
+$ cd backend-service
 
 # serve with hot reload at localhost:3000
 $ npm run start
