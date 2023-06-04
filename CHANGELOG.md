@@ -1,3 +1,12 @@
+## 0.2.1 (2023-06-04)
+
+
+### Bug Fixes
+
+* ci id issue ([012723d](https://github.com/tardis-pro/art-con-room/commit/012723d9f66c5b0c079721a0dce656607e477fe2))
+
+
+
 # 0.2.0 (2023-06-04)
 
 
