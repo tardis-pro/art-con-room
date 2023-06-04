@@ -18,18 +18,14 @@ jobs:
       - name: Setup node env 🏗
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 15
+          node-version: 18
           registry-url: 'https://npm.pkg.github.com'
 
       - name: Install dependencies 👨🏻‍💻
-        run: yarn
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn install --prefer-offline --no-audit
 
       - name: Release pkg to registry ⚡️
         run: npx shipjs trigger
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SLACK_INCOMING_HOOK: ${{ secrets.SLACK_INCOMING_HOOK }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
