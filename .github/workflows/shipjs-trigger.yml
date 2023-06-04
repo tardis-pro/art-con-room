@@ -23,7 +23,9 @@ jobs:
 
       - name: Install dependencies 👨🏻‍💻
         run: yarn install --prefer-offline --no-audit
-
+      - name: setup ci identity
+        run:  git config --global user.email "ci@tardis.digital" && git config --global user.name "tardis"
+        
       - name: Release pkg to registry ⚡️
         run: npx shipjs trigger
         env:
