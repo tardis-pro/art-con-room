@@ -42,7 +42,7 @@ jobs:
 
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: npm ci --prefer-offline --no-audit
+        run: yarn install --prefer-offline --no-audit
 
       - name: Run tests
         run: npm run test
