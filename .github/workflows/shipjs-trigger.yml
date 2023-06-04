@@ -18,7 +18,7 @@ jobs:
       - name: Setup node env 🏗
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 14
+          node-version: 15
           registry-url: 'https://npm.pkg.github.com'
 
       - name: Install dependencies 👨🏻‍💻
