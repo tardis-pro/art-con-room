@@ -44,7 +44,7 @@
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/register": "^7.18.9",
-    "@commitlint/cli": "^17.5.1",
+    "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^18.4.0",
     "ava": "^5.2.0",
     "eslint": "^8.37.0",
